@@ -19,10 +19,22 @@ nav{
     width: 100%;
     height: 100px;
     background: var(--pcolor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
 }
 nav ul{
     visibility: hidden;
+}
+.re{
+    visibility: visible;
+    justify-content: end;
+    margin-right: -150px;
+}
+.re a{
+    text-decoration: none;
+    color: var(--scolor);
 }
 body{
     background: var(--scolor);
@@ -228,6 +240,9 @@ footer a{
     .container img:hover{
         transform: scale(1.1);
         transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    .re{
+        visibility: hidden;
     }
     
 
