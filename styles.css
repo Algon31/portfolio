@@ -186,6 +186,8 @@ footer a{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        position: sticky;
+        top: 0;
     }
     nav ul{
         visibility:visible;
@@ -193,6 +195,7 @@ footer a{
         list-style: none;
         padding: 30px;
         gap: 30px;
+        
     }
     nav ul a{
         text-decoration: none;
