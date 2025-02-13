@@ -1,14 +1,10 @@
-@font-face {
-    font-family: urbanist;
-    src: url('/files/font/Urbanist-Regular.ttf');
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
     --pcolor : #B75A48;
     --pcolor-dull : #b75a488b;
     --scolor : #E8ECD6;
-    /* --pcolor : #000000;
-    --pcolor-dull : #0606068b;
-    --scolor : #ffffff; */
 }
 *{
     margin: 0;
