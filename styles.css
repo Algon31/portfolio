@@ -5,6 +5,9 @@
     --pcolor : #B75A48;
     --pcolor-dull : #b75a488b;
     --scolor : #E8ECD6;
+    /* --pcolor : black;
+    --pcolor-dull : grey;
+    --scolor : white; */
 }
 *{
     margin: 0;
@@ -38,7 +41,7 @@ nav ul{
     color: var(--scolor);
 }
 body{
-    background: var(--scolor);
+    background: white;
 }
 .head{
     box-sizing: border-box;
@@ -76,12 +79,13 @@ body{
 .container img{
     margin: 8px;
     padding: 3px;
-    border: 3px solid var(--pcolor);
+    /* border: 3px solid var(--pcolor); */
     border-radius: 5px;
-    background: var(--pcolor-dull);
+    /* background: var(--pcolor-dull); */
     width: 100px;
     height: 100px;
     object-fit: cover;
+    transition: transform 1s ease-in-out;
 }
 .projects{
     margin:45px 25px;
@@ -90,12 +94,12 @@ body{
 .project{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-self: center;
     align-items: center;
     width: 270px;
     height: 425px;
     background: var(--pcolor);
-    border-radius: 5px;
+    border-radius: 7px;
 }
 .project img{
     margin: 17px 8px;
@@ -103,7 +107,7 @@ body{
     height: 153px;
     object-fit:cover;
     object-position: center center;
-    border: 2px solid rgb(255, 189, 189);
+    border: none;
     box-sizing: border-box;
     border-radius: 2px;
 }
@@ -120,7 +124,7 @@ body{
 }
 .project button{
     margin-top: 10px;
-    background: #B4C4B4;
+    background: white;
     width: 250px;
     height: 40px;
     text-align: center;
@@ -146,7 +150,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 2px;
+    border-radius: 7px;
     color: var(--scolor);
     cursor: pointer;
     border: none;
@@ -247,9 +251,11 @@ footer a{
         justify-content: center;
         margin: 100px;
     }
-    .contact .email:hover{
-        transform: scale(1.2);
-        transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+    .email{
+        transition: transform 0.3s cubic-bezier(0.91, 0.05, 0.7, 1.02);
+    }
+    .email:hover{
+        transform: scale(1.08);
     }
     .projects{
         display: flex;
@@ -257,13 +263,15 @@ footer a{
         align-items: center;
         align-content: center;
     }
+    .project button{
+        transition: transform 0.3s ease-in-out;
+    }
     .project button:hover{
         transform: scale(1.05);
-        transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
     }
     .container img:hover{
         transform: scale(1.1);
-        transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+        transition: transform 0.3s ease-in-out;
     }
     .re{
         visibility: hidden;
