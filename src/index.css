@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Urbanist', sans-serif;
+  }
+  
+  body {
+    font-family: 'Urbanist', sans-serif;
+    @apply bg-[#E8ECD6] text-slate-900 dark:bg-[#0a0f1d] dark:text-slate-100 transition-colors duration-300 min-h-screen overflow-x-hidden;
+  }
+}
+
+/* Custom styles matching original portfolio design */
+.bg-pcolor {
+  background-color: #B75A48;
+}
+
+.text-scolor {
+  color: #E8ECD6;
+}
+
+.text-pcolor {
+  color: #B75A48;
+}
+
+.bg-scolor {
+  background-color: #E8ECD6;
+}
+
+/* Hover effects matching original CSS */
+.skill-img-hover {
+  transition: transform 0.3s ease-in-out;
+}
+.skill-img-hover:hover {
+  transform: scale(1.1);
+}
+
+.btn-hover-scale {
+  transition: transform 0.3s cubic-bezier(0.91, 0.05, 0.7, 1.02);
+}
+.btn-hover-scale:hover {
+  transform: scale(1.08);
+}
+
+.project-btn-hover {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.project-btn-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.social-img-hover {
+  transition: all 0.3s ease-in;
+}
+.social-img-hover:hover {
+  filter: brightness(150%);
+  transform: scale(1.3);
+}
