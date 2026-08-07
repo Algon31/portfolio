@@ -3,12 +3,13 @@ import React from 'react';
 export default function Skills() {
   const skillLogos = [
     { src: '/images/react.svg', alt: 'react', title: 'React.js' },
+    { src: '/images/nodejs.svg', alt: 'nodejs', title: 'Node.js' },
     { src: '/images/javascript.svg', alt: 'js', title: 'JavaScript' },
+    { src: '/images/docker.svg', alt: 'docker', title: 'Docker' },
+    { src: '/images/sql.svg', alt: 'sql', title: 'SQL' },
     { src: '/images/figma.svg', alt: 'figma', title: 'Figma' },
     { src: '/images/c++.png', alt: 'c++', title: 'C++' },
-    { src: '/images/python.svg', alt: 'pyhton', title: 'Python' },
-    { src: '/images/pr.png', alt: 'premire pro', title: 'Premiere Pro' },
-    { src: '/images/blender.png', alt: 'blender', title: 'Blender' },
+    { src: '/images/python.svg', alt: 'python', title: 'Python' },
   ];
 
   return (
@@ -28,7 +29,7 @@ export default function Skills() {
             <img
               src={skill.src}
               alt={skill.alt}
-              className="w-[90px] h-[90px] sm:w-[100px] sm:h-[100px] object-cover rounded-[5px] transition-transform duration-300 ease-in-out group-hover:scale-110 cursor-pointer"
+              className="w-[65px] h-[65px] sm:w-[75px] sm:h-[75px] object-cover rounded-[5px] transition-transform duration-300 ease-in-out group-hover:scale-110 cursor-pointer"
             />
             <span className="text-[11px] font-medium text-slate-700 dark:text-slate-300 mt-1 mb-0.5">
               {skill.title}

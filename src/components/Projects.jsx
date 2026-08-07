@@ -32,11 +32,11 @@ export default function Projects() {
       link: 'https://weather-app31.vercel.app/',
     },
     {
-      title: 'ToDo List',
+      title: 'Dockerized ToDo List',
       image: '/images/ToDo-lists.png',
-      alt: 'weather pic',
+      alt: 'dockerized todolist pic',
       description:
-        'My to-do list app is a simple and efficient task manager built using React, Tailwind CSS, and Vite. It allows users to add, edit, and delete tasks with a clean and responsive interface, making task management seamless and intuitive, designed using figma. build to make sure the reload does not clear the list.',
+        'A containerized full-stack task manager built using React, Node.js, and Docker. Powered by Docker Compose and multi-stage builds for seamless container orchestration, isolated environments, persistent data storage, and smooth production deployment.',
       link: 'https://to-do-list-iota-red-26.vercel.app/',
     },
   ];
