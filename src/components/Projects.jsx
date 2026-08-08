@@ -12,24 +12,8 @@ export default function Projects() {
       image: '/images/chesso.png',
       alt: 'chesso pic',
       description:
-        'Built a full-stack real-time chess game application using React.js , Node.js , socket.io and chess.js. Implemented timer-based matches and resigning option, ensuring fair results.Developed a fully responsive using TailwindCSS and delivering an intuitive and user-friendly UI/UX',
+        'Built a full-stack real-time chess game application using React.js, Node.js, Socket.IO, and Chess.js. Implemented timer-based matches and resigning options to ensure fair gameplay with a responsive UI/UX built using TailwindCSS.',
       link: 'https://chesso-tau.vercel.app/',
-    },
-    {
-      title: 'Spot - Music Player',
-      image: '/images/spot_sc.png',
-      alt: 'weather pic',
-      description:
-        'My music player is a versatile and user-friendly application that offers seamless audio playback with features like play, previous/next track navigation, volume control. It supports dynamic albums, allowing users to organize and browse their music effortlessly, enhancing the listening experience.',
-      link: 'https://github.com/Algon31/spot-a-musicplayer',
-    },
-    {
-      title: 'Weather App',
-      image: '/images/screenshot-weather2.png',
-      alt: 'weather pic',
-      description:
-        'My weather app is a dynamic and user-friendly tool that fetches real-time weather data using API calls and JavaScript. It provides users with mostly accurate and up-to-date weather conditions such as temperature, humidity, wind speed, and more for any desired location.',
-      link: 'https://weather-app31.vercel.app/',
     },
     {
       title: 'Dockerized ToDo List',
@@ -38,6 +22,38 @@ export default function Projects() {
       description:
         'A containerized full-stack task manager built using React, Node.js, and Docker. Powered by Docker Compose and multi-stage builds for seamless container orchestration, isolated environments, persistent data storage, and smooth production deployment.',
       link: 'https://to-do-list-iota-red-26.vercel.app/',
+    },
+    {
+      title: 'mintOS - Hobby OS',
+      image: '/images/mintos.png',
+      alt: 'mintos pic',
+      description:
+        'A low-level hobby operating system built from scratch in C to explore computer architecture and kernel development. Features a custom bootloader, 32-bit protected mode, VGA text mode driver, keyboard input, and a command-line terminal shell.',
+      link: 'https://github.com/Algon31/mintOS',
+    },
+    {
+      title: 'Project: ME - RPG Habit Tracker',
+      image: '/images/project-me.png',
+      alt: 'project-me pic',
+      description:
+        'A gamified personal growth application built with React, Node.js, Express & MongoDB. Transforms self-improvement into an RPG progression system with daily quests, XP tracking, rank promotions (E to S rank), and attribute leveling.',
+      link: 'https://github.com/Algon31/project-me',
+    },
+    {
+      title: 'Weather App',
+      image: '/images/screenshot-weather2.png',
+      alt: 'weather pic',
+      description:
+        'A dynamic and user-friendly weather application that fetches real-time meteorological data using open APIs and JavaScript. Provides live temperature updates, humidity, wind speeds, and atmospheric conditions for any city worldwide.',
+      link: 'https://weather-app31.vercel.app/',
+    },
+    {
+      title: 'Spot - Music Player',
+      image: '/images/spot_sc.png',
+      alt: 'spot music player pic',
+      description:
+        'A versatile and intuitive audio streaming application with seamless audio playback controls, track navigation, volume adjustments, and dynamic album organization to elevate the music listening experience.',
+      link: 'https://github.com/Algon31/spot-a-musicplayer',
     },
   ];
 
@@ -156,7 +172,7 @@ export default function Projects() {
       </div>
 
       {/* Grid Layout (Desktop & Larger Screens) */}
-      <div className="hidden md:flex px-6 sm:px-12 flex-wrap lg:flex-nowrap justify-center items-stretch gap-6 py-4">
+      <div className="hidden md:flex px-6 sm:px-12 flex-wrap justify-center items-stretch gap-6 py-4">
         {projectsData.map((project) => (
           <div
             key={project.title}
